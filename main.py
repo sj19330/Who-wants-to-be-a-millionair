@@ -1,8 +1,10 @@
-import helper_functions as hf
+from Game import Game
 
+# main function
 def main():
-    questions = hf.parser('level1_questions.txt')
-    questions_objects = hf.question_former(questions)
+    game1 = Game('Michael')
+    questions = game1.parser('level1_questions.txt')
+    questions_objects = game1.question_former(questions)
     print(questions_objects)
 
 
